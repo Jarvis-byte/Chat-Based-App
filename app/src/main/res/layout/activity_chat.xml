@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a4d4ff"
+    tools:context=".ChatActivity">
+
+    <EditText
+        android:id="@+id/chatEditText"
+        android:layout_width="412dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/chatlistView"
+        android:layout_width="406dp"
+        android:layout_height="570dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:background="#a4d4ff"
+        app:layout_constraintBottom_toTopOf="@+id/chatEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sendChatButton"
+        android:layout_width="63dp"
+        android:layout_height="30dp"
+        android:onClick="sendChat"
+        android:text="Send"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/chatEditText"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="@+id/chatEditText"
+        app:layout_constraintTop_toTopOf="@+id/chatEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
